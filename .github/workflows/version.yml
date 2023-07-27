@@ -35,14 +35,10 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
         with:
-          ref: main
+          ref: gh-pages
           path: gh-pages
 
       
 
-      - name: Commit and Push Changes
-        run: |
-            cd gh-pages
- 
-             git add .
-             git commit -m "Deploy to GitHub Pages"
+      - name: Deploy
+        run: echo "Hello World"
