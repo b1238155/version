@@ -36,7 +36,7 @@ jobs:
           path: gh-pages
 
       - name: Update App.js
-        run:  gh-pages/App.js
+        run: touch  gh-pages/App.js
 
       - name: Commit and Push Changes
         run: |
