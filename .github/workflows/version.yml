@@ -36,7 +36,7 @@ jobs:
           path: gh-pages
 
       - name: Update App.js
-        run: touch  gh-pages/App.js
+        run: touch gh-pages/App.js
 
       - name: Commit and Push Changes
         run: |
@@ -45,3 +45,4 @@ jobs:
           git config --global user.email 'actions@github.com'
           git add App.js
           git commit -m "Update App.js"
+          
