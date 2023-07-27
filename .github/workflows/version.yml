@@ -31,7 +31,8 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
-        
+        with:
+           path: gh-pages
 
       - name: Update App.js
         run: touch gh-pages/App.js
